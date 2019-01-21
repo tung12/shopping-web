@@ -47,5 +47,5 @@
     "surge": "latest",
     "git-scripts": "0.2.1"
   },
-  "git": { "scripts": { "pre-push": "surge --project ./ --domain shopping-web.surge.sh" } }
+  "git": { "scripts": { "pre-push": "ng build && surge --project ./dist/shopping-web --domain shopping-web.surge.sh" } }
 }
